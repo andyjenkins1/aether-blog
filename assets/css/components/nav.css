@@ -7,7 +7,10 @@
 .navbar ul {
     list-style: none;
     display: flex;
+    justify-content: flex-end;  /* This aligns the links to the right */
     gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar a {

@@ -1,0 +1,18 @@
+/* Ensure full height for html and body */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Site wrapper to control layout */
+  .site-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Makes the container span the full viewport height */
+  }
+  
+  /* Main content takes up remaining space */
+  main {
+    flex: 1;
+  }
