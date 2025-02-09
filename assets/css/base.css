@@ -1,13 +1,61 @@
-/* assets/css/base.css */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-  }
+/* Define custom properties for the light mode color scheme */
+:root {
+  --bg-color: #f9f9f9;         /* Light background */
+  --text-color: #333;          /* Primary text color */
+  --primary-color: #3498db;     /* Accent color (blue) */
+  --secondary-color: #2ecc71;   /* Secondary accent */
+  --link-color: #3498db;        /* Link color */
+}
+
+/* Dark mode overrides: when body.dark-mode is active */
+body.dark-mode {
+  --bg-color: #333;            /* Dark background */
+  --text-color: #f9f9f9;         /* Light text */
+  --primary-color: #e74c3c;      /* Accent color for dark mode (red) */
+  --secondary-color: #27ae60;    /* Secondary accent */
+  --link-color: #e74c3c;         /* Link color */
+}
+
+/* Global styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Global link styling */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem;
+}
+
+/* Paragraphs */
+p {
+  margin: 1rem 0;
+}
+
+/* Optional container for content spacing */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){const e=document.getElementById("theme-toggle");e.addEventListener("click",function(){document.body.classList.toggle("dark-mode");const t=e.querySelector("i");document.body.classList.contains("dark-mode")?(t.classList.remove("fa-moon"),t.classList.add("fa-sun")):(t.classList.remove("fa-sun"),t.classList.add("fa-moon"))})})

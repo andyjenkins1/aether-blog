@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Post</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Post</title>
 
-    
-    
-    
-    
+  
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="http://localhost:1313/css/base.min.6ca433b3306767b2986a030d0adb002a3e5a92d6473e7fbb33d9870b1d844b00.css">
-    <link rel="stylesheet" href="http://localhost:1313/css/layout.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
-    <link rel="stylesheet" href="http://localhost:1313/css/components/nav.min.c165a4893c0ff67267fc366af98ed436482e0fb695378f09a78385c339bb0c26.css">
-    <link rel="stylesheet" href="http://localhost:1313/css/components/error.min.916a03f534d87a26f345607217f54fadf5d3a917d1f3e8326626db49a4ec68b5.css">
+  
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-pE6JbY6Pex21v2TQ3w0XexOaRHtkTJ6sYToU6E3r8BHvR5jK0C+uokfOuqcbdAI/XYm9D9ZTAXZ3Dx/VbktZ6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="http://localhost:1313/css/base.min.d2cca34684659abe8dddad1e6fc50be7af315b231f6c44ba877a760ca8b79e25.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/layout.min.2082f95effd7943be6bc4a9623c586d042947181840695b64bd58359579640ae.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/components/nav.min.bc8f0023237246aa1d6a035d227357649658926d849e27857c7e0217a7689abe.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/components/error.min.916a03f534d87a26f345607217f54fadf5d3a917d1f3e8326626db49a4ec68b5.css">
 </head>
 <body>
+  <div class="site-wrapper">
     
     <nav class="navbar">
     <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/posts">Posts</a></li>
-        <li><a href="/about">About</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/posts">Posts</a></li>
+      <li><a href="/about">About</a></li>
+      <li>
+        <button id="theme-toggle" aria-label="Toggle dark mode" style="padding: 0.3rem; border: 1px solid transparent;">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </li>
     </ul>
-</nav>
+  </nav>
 
     <header>
-        <h1>Aether Blog</h1>
+      <h1>Aether Blog</h1>
     </header>
 
     <main>
-        
+      
     <article>
         <h2>First Post</h2>
         <div><p>Welcome to your new Hugo blog! This is your first post.</p>
@@ -40,7 +55,11 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Aether Blog</p>
+      <p>&copy; 2025 Aether Blog</p>
     </footer>
+  </div>
+
+  
+  <script src="http://localhost:1313/js/theme-toggle.min.551753bf7a8248ce37838c957c73328500ba4004dfac88e23f01b3c6a193486d.js"></script>
 </body>
 </html>
