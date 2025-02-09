@@ -1,0 +1,16 @@
+<nav class="navbar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/posts">Posts</a></li>
+      <li><a href="/about">About</a></li>
+      <!-- Separator using a Font Awesome icon -->
+      <li class="separator">
+        <i class="fa-solid fa-grip-lines-vertical"></i>
+      </li>
+      <li>
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </li>
+    </ul>
+  </nav>

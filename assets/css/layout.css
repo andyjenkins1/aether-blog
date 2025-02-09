@@ -1,18 +1,40 @@
-/* Ensure full height for html and body */
+/* Layout Styles */
+
+/* Full height for html and body */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
   }
   
-  /* Site wrapper to control layout */
+  /* Site Wrapper */
   .site-wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;  /* Makes the container span the full viewport height */
+    min-height: 100vh;
+    z-index: 0;
   }
   
-  /* Main content takes up remaining space */
+  /* Main Content */
   main {
     flex: 1;
+    padding-top: 80px;   /* Prevent overlap with sticky header */
+    position: relative;
+    z-index: 1;           /* Ensure proper stacking below header */
+  }
+  
+  /* Sticky Header */
+  .site-header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    background-color: var(--header-bg, #f7f7f7) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;  /* Subtle shadow */
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out !important;
+    padding: 1rem;
+  }
+  
+  /* Navigation Links */
+  .navbar a {
+    transition: color 0.2s ease-in-out;
   }

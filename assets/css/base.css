@@ -1,60 +1,44 @@
-/* Base CSS Styles */
+/* Global Styles */
 
-/* Root Variables for Light Mode */
+/* Color Variables */
 :root {
-  --bg-color: #f7f7f7;          /* Light mode background */
-  --text-color: #333333;        /* Light mode text color */
-  --header-bg: #f7f7f7;         /* Light mode header background */
-  --link-color: #4fa1d7;        /* Light mode link color */
-  --primary-color: #3e88c3;     /* Primary color for hover/focus */
-}
-
-/* General Body Styles */
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Main Content */
-main {
-  padding: 20px;
-}
-
-/* Links */
-a {
-  color: var(--link-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--primary-color);
-}
-
-/* Dark Mode Overrides */
-body.dark-mode {
-  --bg-color: #1e1e1e;          /* Dark mode background */
-  --text-color: #eeeeee;        /* Dark mode text color */
-  --header-bg: #1e1e1e;         /* Dark mode header background */
-  --link-color: #4fa1d7;        /* Dark mode link color */
-  --primary-color: #3e88c3;     /* Primary color for hover/focus */
-}
-
-/* Utility Classes */
-.hidden {
-  display: none;
-}
-
-.visible {
-  display: block;
-}
-
-/* Transitions */
-* {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+    --header-bg: #f7f7f7;
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --primary-color: #4fa1d7;
+    --link-color: #4fa1d7;
+  }
+  
+  /* Dark Mode Variables */
+  body.dark-mode {
+    --header-bg: #1e1e1e;
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --link-color: #9fc9eb;
+  }
+  
+  /* Base Reset */
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body */
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  /* Links */
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
