@@ -1,30 +1,34 @@
 /* Layout Styles */
 
-/* Full height for html and body */
+/* Ensure full height for html and body */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-  }
-  
-  /* Site Wrapper */
-  .site-wrapper {
+}
+
+/* Site Wrapper */
+.site-wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh;  /* Full viewport height */
+    position: relative;
     z-index: 0;
-  }
-  
-  /* Main Content */
-  main {
-    flex: 1;
-    padding-top: 80px;   /* Prevent overlap with sticky header */
+}
+
+/* Main Content */
+main {
+    flex: 1;              /* Pushes footer to the bottom */
+    padding-top: 80px;    /* Prevent overlap with sticky header */
     position: relative;
     z-index: 1;           /* Ensure proper stacking below header */
-  }
-  
-  /* Sticky Header */
-  .site-header {
+    display: flex;        /* Ensure flex layout for blog pages */
+    flex-direction: column;
+    padding-bottom: 4rem;  /* Increase this value for more space */
+}
+
+/* Sticky Header */
+.site-header {
     position: sticky !important;
     top: 0 !important;
     z-index: 1000 !important;
@@ -32,9 +36,28 @@ html, body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;  /* Subtle shadow */
     transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out !important;
     padding: 1rem;
-  }
-  
-  /* Navigation Links */
-  .navbar a {
+}
+
+/* Navigation Links */
+.navbar a {
     transition: color 0.2s ease-in-out;
-  }
+}
+
+/* Sticky Footer */
+.site-footer {
+    background-color: var(--bg-color);  /* Adjusts with light/dark mode */
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;                   /* Makes footer stick to the bottom */
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Optional subtle separator */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Footer */
+body.dark-mode .site-footer {
+    background-color: var(--header-bg, #1e1e1e);
+    color: var(--text-color, #eeeeee);
+    box-shadow: 0 -2px 4px rgba(255, 255, 255, 0.1); /* Light shadow for dark mode */
+}

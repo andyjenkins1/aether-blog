@@ -1,22 +1,33 @@
 /* Updated Footer CSS using global color variables */
 
-/* The footer uses the global background and text colors so that it changes with light/dark mode */
-footer {
-    background-color: var(--bg-color); /* Off-white in light mode, deep charcoal in dark mode */
-    color: var(--text-color);           /* Dark text in light mode, light text in dark mode */
+/* Sticky Footer */
+.site-footer {
+    background-color: var(--bg-color);
+    color: var(--text-color);
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Optional subtle separator */
-  }
-  
-  footer p {
+    padding: 2rem 0;  /* Adjusted padding for more space above the footer */
+    margin-top: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Footer Text */
+.site-footer p {
     margin: 0;
     font-size: 0.9rem;
-  }
-  
-  /* Optional: Style Font Awesome icons within the footer */
-  footer i {
+}
+
+/* Optional: Style Font Awesome icons within the footer */
+.site-footer i {
     vertical-align: middle;
     margin: 0 0.25rem;
-  }
+}
+
+/* Dark Mode Footer */
+body.dark-mode .site-footer {
+    background-color: var(--header-bg, #1e1e1e);
+    color: var(--text-color, #eeeeee);
+    box-shadow: 0 -2px 4px rgba(255, 255, 255, 0.1); /* Light shadow for dark mode */
+}
