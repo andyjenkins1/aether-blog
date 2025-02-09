@@ -17,11 +17,14 @@
   {{ $layout := resources.Get "css/layout.css" | minify | fingerprint }}
   {{ $nav := resources.Get "css/components/nav.css" | minify | fingerprint }}
   {{ $error := resources.Get "css/components/error.css" | minify | fingerprint }}
+  {{ $footer := resources.Get "css/components/footer.css" | minify | fingerprint }}
+
 
   <link rel="stylesheet" href="{{ $base.Permalink }}">
   <link rel="stylesheet" href="{{ $layout.Permalink }}">
   <link rel="stylesheet" href="{{ $nav.Permalink }}">
   <link rel="stylesheet" href="{{ $error.Permalink }}">
+  <link rel="stylesheet" href="{{ $footer.Permalink }}">
 </head>
 <body>
   <div class="site-wrapper">
@@ -36,9 +39,8 @@
       {{ block "main" . }}{{ end }}
     </main>
 
-    <footer>
-      <p>&copy; {{ now.Year }} {{ .Site.Title }}</p>
-    </footer>
+    {{ partial "footer.html" . }}
+
   </div>
 
   {{ $themeToggle := resources.Get "js/theme-toggle.js" | minify | fingerprint }}

@@ -5,24 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tags</title>
 
-  
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-pE6JbY6Pex21v2TQ3w0XexOaRHtkTJ6sYToU6E3r8BHvR5jK0C+uokfOuqcbdAI/XYm9D9ZTAXZ3Dx/VbktZ6g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  
+  
+  
 
-  
-  
-  
-  
 
   <link rel="stylesheet" href="http://localhost:1313/css/base.min.d2cca34684659abe8dddad1e6fc50be7af315b231f6c44ba877a760ca8b79e25.css">
   <link rel="stylesheet" href="http://localhost:1313/css/layout.min.2082f95effd7943be6bc4a9623c586d042947181840695b64bd58359579640ae.css">
-  <link rel="stylesheet" href="http://localhost:1313/css/components/nav.min.bc8f0023237246aa1d6a035d227357649658926d849e27857c7e0217a7689abe.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/components/nav.min.a185cac99762279ec8afbd04f3939d48d4e0c81af7c53c0c880dcde766c88498.css">
   <link rel="stylesheet" href="http://localhost:1313/css/components/error.min.916a03f534d87a26f345607217f54fadf5d3a917d1f3e8326626db49a4ec68b5.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/components/footer.min.4fff28a98d391bfbb796bbefbf118b136383a908cb978c79fa0f9e789c3f1de9.css">
 </head>
 <body>
   <div class="site-wrapper">
@@ -32,8 +34,12 @@
       <li><a href="/">Home</a></li>
       <li><a href="/posts">Posts</a></li>
       <li><a href="/about">About</a></li>
+      
+      <li class="separator">
+        <i class="fa-solid fa-grip-lines-vertical"></i>
+      </li>
       <li>
-        <button id="theme-toggle" aria-label="Toggle dark mode" style="padding: 0.3rem; border: 1px solid transparent;">
+        <button id="theme-toggle" aria-label="Toggle dark mode">
           <i class="fa-solid fa-moon"></i>
         </button>
       </li>
@@ -54,8 +60,13 @@
     </main>
 
     <footer>
-      <p>&copy; 2025 Aether Blog</p>
-    </footer>
+    <p>
+      &copy; 2025 Aether Blog. Made with 
+      <i class="fa-solid fa-heart" style="color: red;"></i> and 
+      <i class="fa-solid fa-code"></i>.
+    </p>
+  </footer>
+
   </div>
 
   

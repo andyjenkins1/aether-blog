@@ -1,0 +1,20 @@
+/* assets/css/components/footer.css */
+
+footer {
+    background-color: var(--footer-bg-color, #222); /* Fallback to a dark color */
+    color: var(--footer-text-color, white);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Optional: Style Font Awesome icons within the footer */
+  footer i {
+    vertical-align: middle;
+    margin: 0 0.25rem;
+  }
