@@ -1,61 +1,60 @@
-/* Define custom properties for the light mode color scheme */
+/* Base CSS Styles */
+
+/* Root Variables for Light Mode */
 :root {
-  --bg-color: #f9f9f9;         /* Light background */
-  --text-color: #333;          /* Primary text color */
-  --primary-color: #3498db;     /* Accent color (blue) */
-  --secondary-color: #2ecc71;   /* Secondary accent */
-  --link-color: #3498db;        /* Link color */
+  --bg-color: #f7f7f7;          /* Light mode background */
+  --text-color: #333333;        /* Light mode text color */
+  --header-bg: #f7f7f7;         /* Light mode header background */
+  --link-color: #4fa1d7;        /* Light mode link color */
+  --primary-color: #3e88c3;     /* Primary color for hover/focus */
 }
 
-/* Dark mode overrides: when body.dark-mode is active */
-body.dark-mode {
-  --bg-color: #333;            /* Dark background */
-  --text-color: #f9f9f9;         /* Light text */
-  --primary-color: #e74c3c;      /* Accent color for dark mode (red) */
-  --secondary-color: #27ae60;    /* Secondary accent */
-  --link-color: #e74c3c;         /* Link color */
-}
-
-/* Global styles */
+/* General Body Styles */
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-  line-height: 1.6;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Global link styling */
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+/* Links */
 a {
   color: var(--link-color);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--primary-color);
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  margin: 1.5rem 0 0.5rem;
+/* Dark Mode Overrides */
+body.dark-mode {
+  --bg-color: #1e1e1e;          /* Dark mode background */
+  --text-color: #eeeeee;        /* Dark mode text color */
+  --header-bg: #1e1e1e;         /* Dark mode header background */
+  --link-color: #4fa1d7;        /* Dark mode link color */
+  --primary-color: #3e88c3;     /* Primary color for hover/focus */
 }
 
-/* Paragraphs */
-p {
-  margin: 1rem 0;
+/* Utility Classes */
+.hidden {
+  display: none;
 }
 
-/* Optional container for content spacing */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
+.visible {
+  display: block;
 }
 
-/* Utility classes */
-.text-center {
-  text-align: center;
+/* Transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }

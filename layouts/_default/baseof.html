@@ -3,46 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ .Title }}</title>
+  <!-- <title>{{ .Title }}</title> -->
 
-<!-- Google Fonts (using Open Sans) -->
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts (Open Sans) -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<!-- Updated Font Awesome 6.4.0 without integrity attribute -->
-<link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome (latest without integrity attribute) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- CSS Resources -->
   {{ $base := resources.Get "css/base.css" | minify | fingerprint }}
   {{ $layout := resources.Get "css/layout.css" | minify | fingerprint }}
   {{ $nav := resources.Get "css/components/nav.css" | minify | fingerprint }}
   {{ $error := resources.Get "css/components/error.css" | minify | fingerprint }}
   {{ $footer := resources.Get "css/components/footer.css" | minify | fingerprint }}
-
+  {{ $header := resources.Get "css/components/header.css" | minify | fingerprint }}
 
   <link rel="stylesheet" href="{{ $base.Permalink }}">
   <link rel="stylesheet" href="{{ $layout.Permalink }}">
   <link rel="stylesheet" href="{{ $nav.Permalink }}">
   <link rel="stylesheet" href="{{ $error.Permalink }}">
   <link rel="stylesheet" href="{{ $footer.Permalink }}">
+  <link rel="stylesheet" href="{{ $header.Permalink }}">
 </head>
 <body>
   <div class="site-wrapper">
-    <!-- Navigation Bar (Modular Partial) -->
+    <!-- Navigation Partial -->
     {{ partial "nav.html" . }}
 
-    <header>
-      <h1>{{ .Site.Title }}</h1>
-    </header>
+    <!-- Header Partial -->
+   {{ partial "header.html" . }}
 
     <main>
       {{ block "main" . }}{{ end }}
     </main>
 
+    <!-- Footer Partial -->
     {{ partial "footer.html" . }}
-
   </div>
 
+  <!-- Theme Toggle Script -->
   {{ $themeToggle := resources.Get "js/theme-toggle.js" | minify | fingerprint }}
   <script src="{{ $themeToggle.Permalink }}"></script>
 </body>

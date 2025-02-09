@@ -15,5 +15,61 @@
       <guid>http://localhost:1313/posts/first-post/</guid>
       <description>&lt;p&gt;Welcome to your new Hugo blog! This is your first post.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>My 2025 Apple Mac Development Setup</title>
+      <link>http://localhost:1313/posts/my-2025-dev-setup/</link>
+      <pubDate>Fri, 07 Feb 2025 16:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/my-2025-dev-setup/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In this article I have captued my development setup on my personal Mac as of Feb 2025, I know everyone has their own unique setup but this is the one I have settled on which so far provides everything I need.  Will update this article as I tweak and install different languages and tools.&lt;/p&gt;&#xA;&lt;h2 id=&#34;setup-ide&#34;&gt;Setup IDE&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Visual Studio Code Install - On this one no need to so anything special just download from the visual studio code website - code.visualstudio.com&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;install-package-manager&#34;&gt;Install Package Manager&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install Homebrew - head to &lt;a href=&#34;https://brew.sh&#34;&gt;https://brew.sh&lt;/a&gt; and follow the installation commands.  Once installed, don&amp;rsquo;t forget the following basic configuration&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>This is the 4th Blog</title>
+      <link>http://localhost:1313/posts/forth-blog-post/</link>
+      <pubDate>Mon, 03 Feb 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/forth-blog-post/</guid>
+      <description>&lt;h1 id=&#34;exploring-the-power-of-hugo-a-developers-guide&#34;&gt;&lt;strong&gt;Exploring the Power of Hugo: A Developer&amp;rsquo;s Guide&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;🚀 &lt;em&gt;A deep dive into using Hugo for building fast, modern websites.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-introduction&#34;&gt;📝 &lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Hugo is one of the &lt;strong&gt;fastest&lt;/strong&gt; static site generators, built for speed and flexibility. In this guide, we&amp;rsquo;ll cover:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✅ Setting up a Hugo site&lt;/li&gt;&#xA;&lt;li&gt;✅ Writing content in Markdown&lt;/li&gt;&#xA;&lt;li&gt;✅ Using shortcodes and front matter&lt;/li&gt;&#xA;&lt;li&gt;✅ Customizing themes&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-getting-started-with-hugo&#34;&gt;📌 &lt;strong&gt;Getting Started with Hugo&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;To install Hugo on your system, run:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>This is the 5th Blog</title>
+      <link>http://localhost:1313/posts/fifth-blog-post/</link>
+      <pubDate>Mon, 03 Feb 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/fifth-blog-post/</guid>
+      <description>&lt;h1 id=&#34;exploring-the-power-of-hugo-a-developers-guide&#34;&gt;&lt;strong&gt;Exploring the Power of Hugo: A Developer&amp;rsquo;s Guide&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;🚀 &lt;em&gt;A deep dive into using Hugo for building fast, modern websites.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-introduction&#34;&gt;📝 &lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Hugo is one of the &lt;strong&gt;fastest&lt;/strong&gt; static site generators, built for speed and flexibility. In this guide, we&amp;rsquo;ll cover:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✅ Setting up a Hugo site&lt;/li&gt;&#xA;&lt;li&gt;✅ Writing content in Markdown&lt;/li&gt;&#xA;&lt;li&gt;✅ Using shortcodes and front matter&lt;/li&gt;&#xA;&lt;li&gt;✅ Customizing themes&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-getting-started-with-hugo&#34;&gt;📌 &lt;strong&gt;Getting Started with Hugo&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;To install Hugo on your system, run:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>This is the 6th Blog</title>
+      <link>http://localhost:1313/posts/sixth-blog-post/</link>
+      <pubDate>Mon, 03 Feb 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/sixth-blog-post/</guid>
+      <description>&lt;h1 id=&#34;exploring-the-power-of-hugo-a-developers-guide&#34;&gt;&lt;strong&gt;Exploring the Power of Hugo: A Developer&amp;rsquo;s Guide&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;🚀 &lt;em&gt;A deep dive into using Hugo for building fast, modern websites.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-introduction&#34;&gt;📝 &lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Hugo is one of the &lt;strong&gt;fastest&lt;/strong&gt; static site generators, built for speed and flexibility. In this guide, we&amp;rsquo;ll cover:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✅ Setting up a Hugo site&lt;/li&gt;&#xA;&lt;li&gt;✅ Writing content in Markdown&lt;/li&gt;&#xA;&lt;li&gt;✅ Using shortcodes and front matter&lt;/li&gt;&#xA;&lt;li&gt;✅ Customizing themes&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-getting-started-with-hugo&#34;&gt;📌 &lt;strong&gt;Getting Started with Hugo&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;To install Hugo on your system, run:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>This is the 7th Blog</title>
+      <link>http://localhost:1313/posts/seven-blog-post/</link>
+      <pubDate>Mon, 03 Feb 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/seven-blog-post/</guid>
+      <description>&lt;h1 id=&#34;exploring-the-power-of-hugo-a-developers-guide&#34;&gt;&lt;strong&gt;Exploring the Power of Hugo: A Developer&amp;rsquo;s Guide&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;🚀 &lt;em&gt;A deep dive into using Hugo for building fast, modern websites.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-introduction&#34;&gt;📝 &lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Hugo is one of the &lt;strong&gt;fastest&lt;/strong&gt; static site generators, built for speed and flexibility. In this guide, we&amp;rsquo;ll cover:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✅ Setting up a Hugo site&lt;/li&gt;&#xA;&lt;li&gt;✅ Writing content in Markdown&lt;/li&gt;&#xA;&lt;li&gt;✅ Using shortcodes and front matter&lt;/li&gt;&#xA;&lt;li&gt;✅ Customizing themes&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-getting-started-with-hugo&#34;&gt;📌 &lt;strong&gt;Getting Started with Hugo&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;To install Hugo on your system, run:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exploring the Power of Hugo: A Developer&#39;s Guide</title>
+      <link>http://localhost:1313/posts/a-third-entry/</link>
+      <pubDate>Sat, 25 Jan 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/a-third-entry/</guid>
+      <description>&lt;h1 id=&#34;exploring-the-power-of-hugo-a-developers-guide&#34;&gt;&lt;strong&gt;Exploring the Power of Hugo: A Developer&amp;rsquo;s Guide&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;🚀 &lt;em&gt;A deep dive into using Hugo for building fast, modern websites.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-introduction&#34;&gt;📝 &lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Hugo is one of the &lt;strong&gt;fastest&lt;/strong&gt; static site generators, built for speed and flexibility. In this guide, we&amp;rsquo;ll cover:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✅ Setting up a Hugo site&lt;/li&gt;&#xA;&lt;li&gt;✅ Writing content in Markdown&lt;/li&gt;&#xA;&lt;li&gt;✅ Using shortcodes and front matter&lt;/li&gt;&#xA;&lt;li&gt;✅ Customizing themes&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-getting-started-with-hugo&#34;&gt;📌 &lt;strong&gt;Getting Started with Hugo&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;To install Hugo on your system, run:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>This is the second Blog Post</title>
+      <link>http://localhost:1313/posts/second-blog-post-to-help-testing/</link>
+      <pubDate>Wed, 01 Jan 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/second-blog-post-to-help-testing/</guid>
+      <description>&lt;h1 id=&#34;exploring-the-power-of-hugo-a-developers-guide&#34;&gt;&lt;strong&gt;Exploring the Power of Hugo: A Developer&amp;rsquo;s Guide&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;🚀 &lt;em&gt;A deep dive into using Hugo for building fast, modern websites.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-introduction&#34;&gt;📝 &lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Hugo is one of the &lt;strong&gt;fastest&lt;/strong&gt; static site generators, built for speed and flexibility. In this guide, we&amp;rsquo;ll cover:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✅ Setting up a Hugo site&lt;/li&gt;&#xA;&lt;li&gt;✅ Writing content in Markdown&lt;/li&gt;&#xA;&lt;li&gt;✅ Using shortcodes and front matter&lt;/li&gt;&#xA;&lt;li&gt;✅ Customizing themes&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-getting-started-with-hugo&#34;&gt;📌 &lt;strong&gt;Getting Started with Hugo&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;To install Hugo on your system, run:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My First Blog Post</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Tue, 30 Apr 2024 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>&lt;h1 id=&#34;heading-level-1&#34;&gt;Heading level 1&lt;/h1&gt;&#xA;&lt;h2 id=&#34;heading-level-2&#34;&gt;Heading level 2&lt;/h2&gt;&#xA;&lt;h3 id=&#34;heading-level-3&#34;&gt;Heading level 3&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;This is bold text&lt;/strong&gt;&#xA;&lt;em&gt;This is italicized text&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;First item&lt;/li&gt;&#xA;&lt;li&gt;Second item&lt;/li&gt;&#xA;&lt;li&gt;Third item&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;First item&lt;/li&gt;&#xA;&lt;li&gt;Second item&lt;/li&gt;&#xA;&lt;li&gt;Third item&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Dorothy followed her through many of the beautiful rooms in her castle - This is a blockquote&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;At the command prompt, type &lt;code&gt;nano&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://duckduckgo.com&#34;&gt;Duck Duck Go&lt;/a&gt;&#xA;&lt;img src=&#34;image.jpg&#34; alt=&#34;Alt text&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;content blah blah blah&lt;/p&gt;&#xA;&lt;p&gt;content blah blah blah&lt;/p&gt;&#xA;&lt;p&gt;content blah blah blah&lt;/p&gt;&#xA;&lt;p&gt;content blah blah blah&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

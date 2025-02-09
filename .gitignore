@@ -1,0 +1,61 @@
+# Hugo .gitignore - Best Practices
+
+# Ignore Hugo-generated files
+/public/
+/resources/_gen/
+
+# Ignore Hugo cache files
+hugo_stats.json
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore node modules (if using npm/yarn)
+node_modules/
+
+# Ignore dependency directories
+vendor/
+
+# Ignore log files
+*.log
+
+# Ignore environment variable files
+.env
+.env.*
+
+# Ignore build output (if using custom build directories)
+/dist/
+/build/
+
+# Ignore temporary files
+*.swp
+*.swo
+*.tmp
+
+# Ignore backup files
+*~
+
+# Ignore Netlify and Vercel build folders (if deployed there)
+.netlify/
+.vercel/
+
+# Ignore VS Code settings (optional)
+.vscode/
+
+# Ignore IntelliJ IDEA project files (optional)
+.idea/
+
+# Ignore macOS-specific metadata
+.AppleDouble
+.LSOverride
+
+# Ignore Linux filesystem files
+*~
+
+# Ignore hugo cache (new versions)
+/.hugo_cache/
+
+# Ignore custom configuration backups
+config.toml.bak
+config.yaml.bak

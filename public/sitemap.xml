@@ -11,8 +11,64 @@
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-02-09T13:22:54+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/apple/</loc>
+    <lastmod>2025-02-07T16:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-02-07T16:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/development/</loc>
+    <lastmod>2025-02-07T16:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/devstuff/</loc>
+    <lastmod>2025-02-07T16:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/howto/</loc>
+    <lastmod>2025-02-07T16:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/my-2025-dev-setup/</loc>
+    <lastmod>2025-02-07T16:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-02-07T16:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hugo/</loc>
+    <lastmod>2025-02-03T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/markdown/</loc>
+    <lastmod>2025-02-03T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/forth-blog-post/</loc>
+    <lastmod>2025-02-03T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/fifth-blog-post/</loc>
+    <lastmod>2025-02-03T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/sixth-blog-post/</loc>
+    <lastmod>2025-02-03T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/seven-blog-post/</loc>
+    <lastmod>2025-02-03T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/web-development/</loc>
+    <lastmod>2025-02-03T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/a-third-entry/</loc>
+    <lastmod>2025-01-25T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/second-blog-post-to-help-testing/</loc>
+    <lastmod>2025-01-01T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/custom-theme/</loc>
+    <lastmod>2024-04-30T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/hugo/</loc>
+    <lastmod>2024-04-30T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/my-first-post/</loc>
+    <lastmod>2024-04-30T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tutorial/</loc>
+    <lastmod>2024-04-30T12:00:00+00:00</lastmod>
   </url>
 </urlset>

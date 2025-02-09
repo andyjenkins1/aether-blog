@@ -1,11 +1,13 @@
-/* assets/css/components/footer.css */
+/* Updated Footer CSS using global color variables */
 
+/* The footer uses the global background and text colors so that it changes with light/dark mode */
 footer {
-    background-color: var(--footer-bg-color, #222); /* Fallback to a dark color */
-    color: var(--footer-text-color, white);
+    background-color: var(--bg-color); /* Off-white in light mode, deep charcoal in dark mode */
+    color: var(--text-color);           /* Dark text in light mode, light text in dark mode */
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Optional subtle separator */
   }
   
   footer p {
