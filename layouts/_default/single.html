@@ -1,6 +1,38 @@
 {{ define "main" }}
-    <article>
-        <h2>{{ .Title }}</h2>
-        <div>{{ .Content }}</div>
-    </article>
+<article class="blog-post-content">
+  
+  <!-- 📅 Meta Information -->
+  <header class="post-meta">
+    <h1 class="post-title">{{ .Title }}</h1>
+    <p class="post-details">
+      <span class="post-author">By {{ with .Params.author }}{{ . }}{{ else }}Anonymous{{ end }}</span> •
+      <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+    </p>
+
+    <!-- 🏷️ Tags -->
+    {{ with .Params.tags }}
+      <div class="post-tags">
+        {{ range . }}
+          <span class="post-tag">{{ . }}</span>
+        {{ end }}
+      </div>
+    {{ end }}
+  </header>
+
+  <!-- 📖 Blog Content -->
+  <div class="post-body">
+    {{ .Content }}
+  </div>
+
+  <!-- 🔗 Navigation Links -->
+  <nav class="post-navigation">
+    {{ with .PrevInSection }}
+      <a href="{{ .RelPermalink }}" class="prev-post">← {{ .Title }}</a>
+    {{ end }}
+    {{ with .NextInSection }}
+      <a href="{{ .RelPermalink }}" class="next-post">{{ .Title }} →</a>
+    {{ end }}
+  </nav>
+
+</article>
 {{ end }}

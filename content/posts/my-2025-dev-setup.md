@@ -10,15 +10,15 @@ tags:
   - Howto
 ---
 
-## Introduction
+## Introduction H2
 
 In this article I have captued my development setup on my personal Mac as of Feb 2025, I know everyone has their own unique setup but this is the one I have settled on which so far provides everything I need.  Will update this article as I tweak and install different languages and tools.
 
-## Setup IDE
+## Setup IDE - H2
 
 1.  Visual Studio Code Install - On this one no need to so anything special just download from the visual studio code website - code.visualstudio.com
 
-## Install Package Manager
+### Install Package Manager - H3
 
 1.  Install Homebrew - head to https://brew.sh and follow the installation commands.  Once installed, don't forget the following basic configuration
 
@@ -34,7 +34,7 @@ In this article I have captued my development setup on my personal Mac as of Feb
     NOTE:  these are the mose used commands that I use to get things setup and updated
 
 
-    ```bash
+    ```zsh
         brew --version  # Version Installed
         brew --list     # Displays all packages installed
         brew update # Updates Brew to Latest version
@@ -53,7 +53,7 @@ In this article I have captued my development setup on my personal Mac as of Feb
         brew uninstall --cask <app_name> # Removes a GUI App.
     ```
 
-## Upgrading Your Terminal Game with Iterm and OhMyPosh
+## Upgrading Your Terminal Game with Iterm and OhMyPosh - H2
 
 1.  Install iTerm - Installs via https://iterm2.com/ or simply use brew to install.
 
