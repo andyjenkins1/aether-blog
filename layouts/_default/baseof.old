@@ -13,12 +13,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- CSS Resources -->
-  {{ $base := resources.Get "css/base.css" | resources.Minify | resources.Fingerprint }}
-  {{ $layout := resources.Get "css/layout.css" | resources.Minify | resources.Fingerprint }}
-  {{ $nav := resources.Get "css/components/nav.css" | resources.Minify | resources.Fingerprint }}
-  {{ $error := resources.Get "css/components/error.css" | resources.Minify | resources.Fingerprint }}
-  {{ $footer := resources.Get "css/components/footer.css" | resources.Minify | resources.Fingerprint }}
-  {{ $header := resources.Get "css/components/header.css" | resources.Minify | resources.Fingerprint }}
+  {{ $base := resources.Get "css/base.css" | minify | fingerprint }}
+  {{ $layout := resources.Get "css/layout.css" | minify | fingerprint }}
+  {{ $nav := resources.Get "css/components/nav.css" | minify | fingerprint }}
+  {{ $error := resources.Get "css/components/error.css" | minify | fingerprint }}
+  {{ $footer := resources.Get "css/components/footer.css" | minify | fingerprint }}
+  {{ $header := resources.Get "css/components/header.css" | minify | fingerprint }}
 
   <link rel="stylesheet" href="{{ $base.Permalink }}">
   <link rel="stylesheet" href="{{ $layout.Permalink }}">
@@ -33,10 +33,10 @@
     {{ partial "nav.html" . }}
 
     <!-- Header Partial -->
-    <!-- {{ partial "header.html" . }} -->
+   <!--{{ partial "header.html" . }} -->
 
     <main>
-    {{ block "main" . }}{{ end }}
+      {{ block "main" . }}{{ end }}
     </main>
 
     <!-- Footer Partial -->
@@ -44,7 +44,7 @@
   </div>
 
   <!-- Theme Toggle Script -->
-  {{ $themeToggle := resources.Get "js/theme-toggle.js" | resources.Minify | resources.Fingerprint }}
+  {{ $themeToggle := resources.Get "js/theme-toggle.js" | minify | fingerprint }}
   <script src="{{ $themeToggle.Permalink }}"></script>
 </body>
 </html>
