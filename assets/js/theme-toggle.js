@@ -1,32 +1,50 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const toggle = document.getElementById('theme-toggle');
-  const icon = toggle.querySelector('i');
+    const themeToggle = document.getElementById('theme-toggle');
+    const icon = themeToggle.querySelector('i');
+    const header = document.querySelector('.site-header');
 
-  // Check for saved theme in localStorage
-  const savedTheme = localStorage.getItem('theme') || 'light';
-  if (savedTheme === 'dark') {
-      document.body.classList.add('dark-mode');
-      icon.classList.remove('fa-moon');
-      icon.classList.add('fa-sun');
-  } else {
-      document.body.classList.remove('dark-mode');
-      icon.classList.remove('fa-sun');
-      icon.classList.add('fa-moon');
-  }
+    // Debug lines (commented out)
+    // console.log('Theme toggle script loaded.');
 
-  // Toggle dark mode on button click
-  toggle.addEventListener('click', function () {
-      document.body.classList.toggle('dark-mode');
+    // Check for saved theme in localStorage
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    // console.log('Saved theme:', savedTheme);
 
-      // Update the icon based on the current mode
-      if (document.body.classList.contains('dark-mode')) {
-          icon.classList.remove('fa-moon');
-          icon.classList.add('fa-sun');
-          localStorage.setItem('theme', 'dark'); // Save the preference
-      } else {
-          icon.classList.remove('fa-sun');
-          icon.classList.add('fa-moon');
-          localStorage.setItem('theme', 'light'); // Save the preference
-      }
-  });
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        icon.classList.replace('fa-moon', 'fa-sun');
+    } else {
+        document.body.classList.remove('dark-mode');
+        icon.classList.replace('fa-sun', 'fa-moon');
+    }
+
+    // Theme toggle button event listener
+    themeToggle.addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode');
+
+        if (document.body.classList.contains('dark-mode')) {
+            icon.classList.replace('fa-moon', 'fa-sun');
+            localStorage.setItem('theme', 'dark');
+            // console.log('Dark mode enabled');
+        } else {
+            icon.classList.replace('fa-sun', 'fa-moon');
+            localStorage.setItem('theme', 'light');
+            // console.log('Light mode enabled');
+        }
+    });
+
+    // Scroll event to adjust header transparency
+    function handleScroll() {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    }
+
+    // Apply correct class on load
+    handleScroll();
+
+    // Apply class on scroll
+    window.addEventListener('scroll', handleScroll);
 });

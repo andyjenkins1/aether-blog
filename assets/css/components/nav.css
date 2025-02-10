@@ -1,100 +1,80 @@
-/* Sticky Header - Fix */
-.site-header {
-    position: sticky !important;
-    top: 0 !important;
-    z-index: 1000 !important;  /* Adjust to be high but not excessive */
-    background-color: var(--header-bg, #f7f7f7) !important;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;  /* Subtle shadow */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
-    padding: 1rem;  /* Maintain padding */
+/* Theme Toggle */
+#theme-toggle {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
-  
-  /* Ensure the navbar fills the header correctly */
-  .navbar {
+
+#theme-toggle i {
+    font-size: 1.2rem;
+    color: var(--text-color, #333333);
+}
+
+#theme-toggle:hover i {
+    transform: scale(1.1);
+    color: var(--primary-color, #3e88c3);
+}
+
+/* Align Navigation Items to the Right */
+.navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end;  /* Right-align nav items */
     align-items: center;
-    padding: 1rem;
-  }
-  
-  /* Navbar Alignment */
-  .navbar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1rem;
-  }
-  
-  /* Navigation Links */
-  .navbar ul {
+    width: 100%;  /* Ensure it spans the full width */
+    padding: 0 1rem;  /* Optional padding */
+}
+
+/* Navigation Links */
+.navbar ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 1rem;  /* Spacing between links */
     margin: 0;
     padding: 0;
-    align-items: center; /* Ensure alignment with toggle */
-  }
-  
-  .navbar a {
+}
+
+.navbar li {
+    display: inline;  /* Make list items inline */
+}
+
+.navbar a {
+    color: var(--link-color, #4fa1d7);
     text-decoration: none;
-    color: var(--link-color, #4fa1d7);
-    font-weight: bold;
     transition: color 0.3s ease;
-    font-size: 1.2rem; /* Set navigation text size */
-  }
-  
-  .navbar a:hover {
+    padding: 0.5rem 0.75rem;  /* Better click area */
+}
+
+.navbar a:hover {
     color: var(--primary-color, #3e88c3);
-  }
-  
-  /* Separator */
-  .navbar .separator {
-    margin: 0 5px;              /* Adjust spacing */
-    color: var(--text-color, #333333);
-    font-size: 1rem;            /* Adjust size to match nav items */
-    line-height: 1;
-    display: flex;
-    align-items: center;        /* Align vertically */
-  }
-  
-  /* Theme Toggle */
-  #theme-toggle {
-    all: unset;                /* Reset all default button styles */
-    cursor: pointer;           /* Keep pointer for interactivity */
-    display: flex;
-    align-items: center;       /* Align vertically with nav items */
-    margin-left: 2px;          /* Move toggle closer to separator */
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-  
-  #theme-toggle i {
-    font-size: 1.2rem;         /* Match icon size with nav text */
-    color: var(--text-color, #333333);  /* Icon color */
-  }
-  
-  #theme-toggle:hover i {
-    transform: scale(1.1);     /* Slight enlargement on hover */
-    color: var(--primary-color, #3e88c3);
-  }
-  
-  /* Dark Mode Adjustments */
-  body.dark-mode .site-header {
+}
+
+/* Separator */
+.separator {
+    margin: 0 0.5rem;
+    opacity: 0.5;
+}
+
+/* Dark Mode */
+body.dark-mode .site-header {
     background-color: var(--header-bg, #1e1e1e);
-    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);  /* Lighter shadow for dark mode */
-  }
-  
-  body.dark-mode .navbar a {
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .site-header a {
     color: var(--link-color, #4fa1d7);
-  }
-  
-  body.dark-mode .navbar a:hover {
+}
+
+body.dark-mode .site-header a:hover {
     color: var(--primary-color, #3e88c3);
-  }
-  
-  body.dark-mode .navbar .separator {
+}
+
+body.dark-mode .separator {
     color: var(--text-color, #eeeeee);
-  }
-  
-  body.dark-mode #theme-toggle i {
+}
+
+body.dark-mode #theme-toggle i {
     color: var(--link-color, #4fa1d7);
-  }
+}
