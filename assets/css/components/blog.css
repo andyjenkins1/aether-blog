@@ -128,11 +128,11 @@ body.dark-mode .blog-tag:hover {
 
 /* 📄 Blog Post Content Wrapper */
 .blog-post-content {
-    max-width: 800px;                    /* Controls post width */
-    margin: 0 auto;                      /* Center align */
-    padding: 2rem 0.5rem 2rem 0.25rem;  /* Reduced left padding */
-    line-height: 1.8;                   /* Improve readability */
-    font-family: 'Inter', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0.5rem 2rem 0.25rem;
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif;  /* ✅ Updated to Roboto */
 }
 
 /* 📅 Post Meta Information */
@@ -220,38 +220,14 @@ body:not(.dark-mode) .blog-post-content h6 {
 
 /* Adjust Heading Sizes */
 .blog-post-content h1 { font-size: 2rem; }
-.blog-post-content h2 { font-size: 1.75rem; }
-.blog-post-content h3 { font-size: 1.5rem; }
+.blog-post-content h2 { font-size: 1.5rem; }   /* Reduced from 1.75rem to 1.5rem */
+.blog-post-content h3 { font-size: 1.4rem; }
 .blog-post-content h4 { font-size: 1.25rem; }
 .blog-post-content h5 { font-size: 1.1rem; }
 .blog-post-content h6 { font-size: 1rem; }
 
 
 /* 📥 Indentation for Content Under Headings */
-
-/* ✅ Ensure No Indentation for Content Under H1 */
-.blog-post-content h1 + * {
-    margin-left: 0 !important;   /* Force alignment with H1 */
-    padding-left: 0 !important;  /* Remove any padding causing misalignment */
-}
-
-/* ✅ Apply Indentation for H2 - H6 */
-.blog-post-content h2 + *,
-.blog-post-content h3 + *,
-.blog-post-content h4 + *,
-.blog-post-content h5 + *,
-.blog-post-content h6 + * {
-    margin-left: 1rem;           /* Indent content under subheadings */
-}
-
-/* ✅ Consistent Indentation for All Nested Content Under H2 - H6 */
-.blog-post-content h2 ~ *,
-.blog-post-content h3 ~ *,
-.blog-post-content h4 ~ *,
-.blog-post-content h5 ~ *,
-.blog-post-content h6 ~ * {
-    margin-left: 1rem;
-}
 
 /* Ensure Lists Align Properly */
 .blog-post-content ul,
@@ -260,11 +236,178 @@ body:not(.dark-mode) .blog-post-content h6 {
     margin-left: 0.5rem; /* Align lists neatly with paragraphs */
 }
 
+/* ✅ Ensure Left Alignment for All Headings and Body Text */
+.blog-post-content h2,
+.blog-post-content h3,
+.blog-post-content h4,
+.blog-post-content h5,
+.blog-post-content h6,
+.blog-post-content p,
+.blog-post-content blockquote,
+.blog-post-content pre {
+    margin-left: 0 !important;    /* Force left alignment */
+    padding-left: 0 !important;   /* Remove padding if any */
+    text-align: left;
+}
+
+/* ✅ Indentation for Ordered & Unordered Lists */
+.blog-post-content ul,
+.blog-post-content ol {
+    padding-left: 2rem;  /* Indentation for lists */
+    margin-left: 0.5rem; /* Slight margin for neatness */
+    list-style-position: outside;  /* Keep bullets/numbers outside */
+}
+
+/* Optional: Nested Lists (Indented Further) */
+.blog-post-content ul ul,
+.blog-post-content ol ol {
+    padding-left: 1.5rem;  /* Further indent nested lists */
+}
+
+.blog-post-content blockquote {
+    margin-left: 0;  /* Left-aligned */
+    padding-left: 1rem;  /* Optional subtle padding */
+    border-left: 4px solid #ccc;  /* Maintain visual separation */
+}
+
 /* Optional: Adjust Blockquote Alignment */
 .blog-post-content blockquote {
     margin-left: 1rem;
     padding-left: 1rem;
     border-left: 4px solid #ccc;
+}
+
+/* Cleaned Blog CSS - Code Block Styling */
+
+/* General Code Block Styling */
+pre {
+    background-color: #f8f9fa; /* Light grey background */
+    color: #003366;            /* Dark blue text */
+    border-radius: 8px;        /* Smooth rounded corners */
+    padding: 1rem;             /* Padding inside the code block */
+    margin: 1.5rem 0;          /* Space above and below code blocks */
+    overflow: auto;            /* Ensure content doesn't overflow */
+    box-shadow: none;          /* Remove box-shadow causing dark edges */
+    border: none;              /* Remove borders that could cause visual glitches */
+    white-space: pre-wrap;     /* Wrap long code lines for smaller screens */
+    word-break: break-word;    /* Break long words if needed */
+}
+
+/* Inline Code Styling */
+code {
+    background-color: #eef2f5;  /* Slight grey tint for inline code */
+    padding: 0.2rem 0.4rem;     /* Padding for inline code readability */
+    border-radius: 4px;         /* Rounded corners for inline code */
+    font-family: 'Fira Code', monospace; /* Consistent coding font */
+    color: #003366;             /* Dark blue for emphasis */
+}
+
+/* Ensure Inline Code Matches Block Code */
+pre code {
+    background: none;           /* Prevent conflicts with the pre background */
+    padding: 0;                 /* Reset padding since it's handled by pre */
+    border-radius: 0;           /* Remove extra border-radius */
+    display: block;             /* Ensure proper block layout */
+}
+
+/* Syntax Highlighting - Simplified Shades of Blue */
+.token.comment, .hljs-comment {
+    color: #6c8ebf; /* Soft blue for comments */
+    font-style: italic;
+}
+
+.token.keyword, .hljs-keyword {
+    color: #005f99; /* Deep blue for keywords */
+    font-weight: bold;
+}
+
+.token.string, .hljs-string {
+    color: #007acc; /* Lighter blue for strings */
+}
+
+.token.function, .hljs-title {
+    color: #004080; /* Navy blue for functions */
+    font-weight: bold;
+}
+
+.token.variable, .hljs-variable {
+    color: #336699; /* Medium blue for variables */
+}
+
+.token.number, .hljs-number {
+    color: #0086b3; /* Aqua blue for numbers */
+}
+
+.token.operator, .hljs-operator {
+    color: #005b96; /* Strong blue for operators */
+    font-weight: bold;
+}
+
+/* Hover Effect for Code Blocks */
+pre:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove Redundant Styling */
+pre code, code, .token, .hljs {
+    border: none;               /* Remove unnecessary borders */
+    box-shadow: none;           /* Remove redundant shadows */
+}
+
+
+/* Inline Code Styling */
+p code {
+    background: #edf2f7;
+    color: #003366;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+}
+
+
+/* Hover Effect for Code Blocks */
+body:not(.dark-mode) pre:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Syntax Highlighting */
+body:not(.dark-mode) .hljs-comment,
+body:not(.dark-mode) .hljs-quote {
+    color: #6c757d; /* Muted gray */
+    font-style: italic;
+}
+
+body:not(.dark-mode) .hljs-keyword,
+body:not(.dark-mode) .hljs-selector-tag,
+body:not(.dark-mode) .hljs-subst {
+    color: #007acc; /* Cool blue */
+    font-weight: bold;
+}
+
+body:not(.dark-mode) .hljs-string,
+body:not(.dark-mode) .hljs-title,
+body:not(.dark-mode) .hljs-section {
+    color: #d6336c; /* Magenta-pink for strings */
+}
+
+body:not(.dark-mode) .hljs-number,
+body:not(.dark-mode) .hljs-literal,
+body:not(.dark-mode) .hljs-symbol,
+body:not(.dark-mode) .hljs-bullet {
+    color: #f08c00; /* Warm orange */
+}
+
+body:not(.dark-mode) .hljs-name,
+body:not(.dark-mode) .hljs-attribute {
+    color: #20c997; /* Mint green */
+}
+
+body:not(.dark-mode) .hljs-variable,
+body:not(.dark-mode) .hljs-template-variable,
+body:not(.dark-mode) .hljs-class .hljs-title {
+    color: #7952b3; /* Soft purple */
 }
 
 /* Homepage Welcome Section */
@@ -283,4 +426,18 @@ body:not(.dark-mode) .blog-post-content h6 {
 .homepage-welcome p {
     font-size: 1.2rem;
     color: #666;
+}
+
+/* ✅ Force Light Background for Code Blocks */
+pre {
+    background-color: #f8f9fa !important; /* Light grey background */
+    color: #003366 !important;            /* Dark blue text */
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    overflow: auto;
+    box-shadow: none;
+    border: none;
+    white-space: pre-wrap;
+    word-break: break-word;
 }

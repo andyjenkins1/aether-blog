@@ -10,10 +10,12 @@ tags:
   - Web Development
 ---
 
-# **Exploring the Power of Hugo: A Developer's Guide**
+## Exploring the Power of Hugo: A Developer's Guide**
 🚀 *A deep dive into using Hugo for building fast, modern websites.*
 
 ---
+
+This is a load of text - this shouldd be in the new font, interesting to see if it app;ues there is no reason why it shouldnt - so why would it now wor?, thoughts on a postcard!
 
 ## 📝 **Introduction**
 Hugo is one of the **fastest** static site generators, built for speed and flexibility. In this guide, we'll cover:

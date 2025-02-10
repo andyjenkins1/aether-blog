@@ -18,7 +18,10 @@ In this article I have captued my development setup on my personal Mac as of Feb
 
 1.  Visual Studio Code Install - On this one no need to so anything special just download from the visual studio code website - code.visualstudio.com
 
-### Install Package Manager - H3
+## Install Package Manager - H2
+
+Yes this is a great idea - I will install a packahe manager - this is a test delete.
+
 
 1.  Install Homebrew - head to https://brew.sh and follow the installation commands.  Once installed, don't forget the following basic configuration
 
