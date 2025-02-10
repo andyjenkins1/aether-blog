@@ -10,8 +10,6 @@ tags:
   - Howto
 ---
 
----
-
 ## Introduction
 
 In this article I have captued my development setup on my personal Mac as of Feb 2025, I know everyone has their own unique setup but this is the one I have settled on which so far provides everything I need.  Will update this article as I tweak and install different languages and tools.

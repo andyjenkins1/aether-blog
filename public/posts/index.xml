@@ -6,21 +6,21 @@
     <description>Recent content in Posts on Aether Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Feb 2025 13:22:54 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Feb 2025 16:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>First Post</title>
-      <link>http://localhost:1313/posts/first-post/</link>
-      <pubDate>Sun, 09 Feb 2025 13:22:54 +0000</pubDate>
-      <guid>http://localhost:1313/posts/first-post/</guid>
-      <description>&lt;p&gt;Welcome to your new Hugo blog! This is your first post.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>My 2025 Apple Mac Development Setup</title>
       <link>http://localhost:1313/posts/my-2025-dev-setup/</link>
       <pubDate>Fri, 07 Feb 2025 16:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/my-2025-dev-setup/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In this article I have captued my development setup on my personal Mac as of Feb 2025, I know everyone has their own unique setup but this is the one I have settled on which so far provides everything I need.  Will update this article as I tweak and install different languages and tools.&lt;/p&gt;&#xA;&lt;h2 id=&#34;setup-ide&#34;&gt;Setup IDE&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Visual Studio Code Install - On this one no need to so anything special just download from the visual studio code website - code.visualstudio.com&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;install-package-manager&#34;&gt;Install Package Manager&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install Homebrew - head to &lt;a href=&#34;https://brew.sh&#34;&gt;https://brew.sh&lt;/a&gt; and follow the installation commands.  Once installed, don&amp;rsquo;t forget the following basic configuration&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In this article I have captued my development setup on my personal Mac as of Feb 2025, I know everyone has their own unique setup but this is the one I have settled on which so far provides everything I need.  Will update this article as I tweak and install different languages and tools.&lt;/p&gt;&#xA;&lt;h2 id=&#34;setup-ide&#34;&gt;Setup IDE&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Visual Studio Code Install - On this one no need to so anything special just download from the visual studio code website - code.visualstudio.com&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;install-package-manager&#34;&gt;Install Package Manager&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install Homebrew - head to &lt;a href=&#34;https://brew.sh&#34;&gt;https://brew.sh&lt;/a&gt; and follow the installation commands.  Once installed, don&amp;rsquo;t forget the following basic configuration&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>This is a dummy first post</title>
+      <link>http://localhost:1313/posts/first-post/</link>
+      <pubDate>Mon, 03 Feb 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/first-post/</guid>
+      <description>&lt;p&gt;Welcome to your new Hugo blog! This is your first post.&lt;/p&gt;</description>
     </item>
     <item>
       <title>This is the 4th Blog</title>

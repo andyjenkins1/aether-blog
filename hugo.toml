@@ -1,3 +1,9 @@
 baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
 title = 'Aether Blog'
+
+
+# Define Taxonomies
+[taxonomies]
+  tag = "tags"
+  category = "categories"

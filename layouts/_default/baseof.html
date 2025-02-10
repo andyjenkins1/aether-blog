@@ -19,6 +19,7 @@
   {{ $error := resources.Get "css/components/error.css" | resources.Minify | resources.Fingerprint }}
   {{ $footer := resources.Get "css/components/footer.css" | resources.Minify | resources.Fingerprint }}
   {{ $header := resources.Get "css/components/header.css" | resources.Minify | resources.Fingerprint }}
+  {{ $blog := resources.Get "css/components/blog.css" | resources.Minify | resources.Fingerprint }}
 
   <link rel="stylesheet" href="{{ $base.Permalink }}">
   <link rel="stylesheet" href="{{ $layout.Permalink }}">
@@ -26,6 +27,8 @@
   <link rel="stylesheet" href="{{ $error.Permalink }}">
   <link rel="stylesheet" href="{{ $footer.Permalink }}">
   <link rel="stylesheet" href="{{ $header.Permalink }}">
+  <link rel="stylesheet" href="{{ $blog.Permalink }}">
+
 </head>
 <body>
   <div class="site-wrapper">

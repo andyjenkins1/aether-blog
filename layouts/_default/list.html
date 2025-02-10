@@ -1,8 +1,46 @@
 {{ define "main" }}
-    <h2>Blog Posts</h2>
-    <ul>
-        {{ range .Pages }}
-            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-        {{ end }}
-    </ul>
+<section class="blog-list">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+
+    <div class="card-grid">
+      {{ range .Paginator.Pages }}
+        <article class="blog-card">
+          <!-- Thumbnail with Fallback -->
+          <div class="card-thumbnail">
+            <img src="{{ with .Params.thumbnail }}{{ . | relURL }}{{ else }}{{ "/images/default-thumbnail.jpg" | relURL }}{{ end }}" alt="{{ .Title }}" />
+          </div>
+
+          <!-- Blog Content -->
+          <div class="card-content">
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+
+            <!-- Metadata: Reading Time & Tags -->
+            <div class="card-meta">
+              <span class="reading-time">{{ .ReadingTime }} min read</span>
+
+              {{ with .Params.tags }}
+              <div class="blog-tags">
+                {{ range . }}
+                  <span class="blog-tag">{{ . }}</span>
+                {{ end }}
+              </div>
+              {{ end }}
+            </div>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      {{ if .Paginator.HasPrev }}
+        <a href="{{ .Paginator.Prev.URL }}" class="prev">← Previous</a>
+      {{ end }}
+      {{ if .Paginator.HasNext }}
+        <a href="{{ .Paginator.Next.URL }}" class="next">Next →</a>
+      {{ end }}
+    </div>
+  </div>
+</section>
 {{ end }}

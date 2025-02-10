@@ -19,6 +19,7 @@
   
   
   
+  
 
   <link rel="stylesheet" href="http://localhost:1313/css/base.min.7e60a646179df38b51d180bd4bd50d8a4b81cebdfbddc6ff507757b57d99d20a.css">
   <link rel="stylesheet" href="http://localhost:1313/css/layout.min.43c584d9868dd855b5d81031a011b702cb0c55d4bf6791a59200e91f01916a65.css">
@@ -26,6 +27,8 @@
   <link rel="stylesheet" href="http://localhost:1313/css/components/error.min.916a03f534d87a26f345607217f54fadf5d3a917d1f3e8326626db49a4ec68b5.css">
   <link rel="stylesheet" href="http://localhost:1313/css/components/footer.min.748fe8c31a928e3652c24f2709bef405deb0f1836f646d5b89ce6bcb66c90df6.css">
   <link rel="stylesheet" href="http://localhost:1313/css/components/header.min.23259c705664f7009d82075c5f5ebaeba6a0fb3a9aadfbc077a899b5e3867f26.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/components/blog.min.67badade80aa142c0ca963ecd7c283751347de3269bd7a8d2e1a8919e081dbab.css">
+
 </head>
 <body>
   <div class="site-wrapper">
@@ -51,14 +54,59 @@
 
     <main>
     
-    <h2>Blog Posts</h2>
-    <ul>
-        
-            <li><a href="/categories/development/">Development</a></li>
-        
-            <li><a href="/categories/hugo/">Hugo</a></li>
-        
-    </ul>
+<section class="blog-list">
+  <div class="container">
+    <h1>Categories</h1>
+
+    <div class="card-grid">
+      
+        <article class="blog-card">
+          
+          <div class="card-thumbnail">
+            <img src="/images/default-thumbnail.jpg" alt="Development" />
+          </div>
+
+          
+          <div class="card-content">
+            <h2><a href="/categories/development/">Development</a></h2>
+
+            
+            <div class="card-meta">
+              <span class="reading-time">0 min read</span>
+
+              
+            </div>
+          </div>
+        </article>
+      
+        <article class="blog-card">
+          
+          <div class="card-thumbnail">
+            <img src="/images/default-thumbnail.jpg" alt="Hugo" />
+          </div>
+
+          
+          <div class="card-content">
+            <h2><a href="/categories/hugo/">Hugo</a></h2>
+
+            
+            <div class="card-meta">
+              <span class="reading-time">0 min read</span>
+
+              
+            </div>
+          </div>
+        </article>
+      
+    </div>
+
+    
+    <div class="pagination">
+      
+      
+    </div>
+  </div>
+</section>
 
     </main>
 
