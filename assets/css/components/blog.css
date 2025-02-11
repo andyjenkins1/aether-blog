@@ -232,7 +232,9 @@ body:not(.dark-mode) .blog-post-content h6 {
 /* Ensure Lists Align Properly */
 .blog-post-content ul,
 .blog-post-content ol {
-    padding-left: 2rem; /* Keep bullet/number lists properly indented */
+    padding-left: 1.25rem;    /* Reduced padding for better alignment with H2 */
+    margin-left: 0;           /* Remove margin */
+    list-style-position: outside;  /* Keep bullet/number lists properly indented */
     margin-left: 0.5rem; /* Align lists neatly with paragraphs */
 }
 
@@ -253,15 +255,17 @@ body:not(.dark-mode) .blog-post-content h6 {
 /* ✅ Indentation for Ordered & Unordered Lists */
 .blog-post-content ul,
 .blog-post-content ol {
-    padding-left: 2rem;  /* Indentation for lists */
+    padding-left: 1.25rem;    /* Reduced padding for better alignment with H2 */
+    margin-left: 0;           /* Remove margin */
+    list-style-position: outside;  /* Keep bullet/number lists properly indented */
     margin-left: 0.5rem; /* Slight margin for neatness */
-    list-style-position: outside;  /* Keep bullets/numbers outside */
 }
 
 /* Optional: Nested Lists (Indented Further) */
 .blog-post-content ul ul,
 .blog-post-content ol ol {
-    padding-left: 1.5rem;  /* Further indent nested lists */
+    padding-left: 1.25rem;    /* Consistent indentation for nested lists */
+    margin-left: 0;
 }
 
 .blog-post-content blockquote {
@@ -284,22 +288,25 @@ pre {
     background-color: #f8f9fa; /* Light grey background */
     color: #003366;            /* Dark blue text */
     border-radius: 8px;        /* Smooth rounded corners */
-    padding: 1rem;             /* Padding inside the code block */
-    margin: 1.5rem 0;          /* Space above and below code blocks */
+    padding: 1.5rem 2rem;      /* Increased padding for better indentation */
+    margin: 1.5rem 1rem;       /* Updated horizontal margin */
     overflow: auto;            /* Ensure content doesn't overflow */
-    box-shadow: none;          /* Remove box-shadow causing dark edges */
-    border: none;              /* Remove borders that could cause visual glitches */
+    border: 1px solid #e9ecef; /* Updated border */
     white-space: pre-wrap;     /* Wrap long code lines for smaller screens */
     word-break: break-word;    /* Break long words if needed */
+    transition: all 0.2s ease; /* Updated transition */
+    font-family: 'Fira Code', monospace; /* Updated font family */
+    line-height: 1.6;          /* Updated line height */
 }
 
 /* Inline Code Styling */
-code {
-    background-color: #eef2f5;  /* Slight grey tint for inline code */
+code:not(pre code) {
+    background-color: #edf2f7;  /* Slight grey tint for inline code */
     padding: 0.2rem 0.4rem;     /* Padding for inline code readability */
     border-radius: 4px;         /* Rounded corners for inline code */
     font-family: 'Fira Code', monospace; /* Consistent coding font */
     color: #003366;             /* Dark blue for emphasis */
+    font-size: 0.9em;           /* Updated font size */
 }
 
 /* Ensure Inline Code Matches Block Code */
@@ -312,41 +319,40 @@ pre code {
 
 /* Syntax Highlighting - Simplified Shades of Blue */
 .token.comment, .hljs-comment {
-    color: #6c8ebf; /* Soft blue for comments */
+    color: #5d7a98;             /* Muted blue-grey for comments */
     font-style: italic;
 }
 
 .token.keyword, .hljs-keyword {
-    color: #005f99; /* Deep blue for keywords */
-    font-weight: bold;
+    color: #0073e6;             /* Vibrant blue for keywords */
+    font-weight: 600;
 }
 
 .token.string, .hljs-string {
-    color: #007acc; /* Lighter blue for strings */
+    color: #09825d;             /* Forest green for strings */
 }
 
 .token.function, .hljs-title {
-    color: #004080; /* Navy blue for functions */
-    font-weight: bold;
+    color: #0550ae;             /* Royal blue for functions */
+    font-weight: 600;
 }
 
 .token.variable, .hljs-variable {
-    color: #336699; /* Medium blue for variables */
+    color: #0369a1;             /* Ocean blue for variables */
 }
 
 .token.number, .hljs-number {
-    color: #0086b3; /* Aqua blue for numbers */
+    color: #0891b2;             /* Teal for numbers */
 }
 
 .token.operator, .hljs-operator {
-    color: #005b96; /* Strong blue for operators */
-    font-weight: bold;
+    color: #1e40af;             /* Deep blue for operators */
 }
 
 /* Hover Effect for Code Blocks */
 pre:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px); /* Updated transform */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Updated box-shadow */
 }
 
 /* Remove Redundant Styling */
@@ -401,7 +407,7 @@ body:not(.dark-mode) .hljs-bullet {
 
 body:not(.dark-mode) .hljs-name,
 body:not(.dark-mode) .hljs-attribute {
-    color: #20c997; /* Mint green */
+    color: #205bc9; /* Mint green */
 }
 
 body:not(.dark-mode) .hljs-variable,
@@ -433,11 +439,100 @@ pre {
     background-color: #f8f9fa !important; /* Light grey background */
     color: #003366 !important;            /* Dark blue text */
     border-radius: 8px;
-    padding: 1rem;
-    margin: 1.5rem 0;
+    padding: 1.5rem 2rem;                 /* Increased padding for better indentation */
+    margin: 1.5rem 1rem;                  /* Updated horizontal margin */
     overflow: auto;
     box-shadow: none;
-    border: none;
+    border: 1px solid #e9ecef;            /* Updated border */
     white-space: pre-wrap;
     word-break: break-word;
+    transition: all 0.2s ease;            /* Updated transition */
+    font-family: 'Fira Code', monospace;  /* Updated font family */
+    line-height: 1.6;                     /* Updated line height */
+}
+
+/* Dark Mode Adjustments */
+body.dark-mode pre {
+    background-color: #1e1e1e !important;    /* Darker background */
+    color: #d4d4d4 !important;               /* Lighter text */
+    border-color: #404040;                   /* Darker border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-left: 1rem;                       /* Maintain indentation in dark mode */
+    margin-right: 1rem;
+}
+
+body.dark-mode code:not(pre code) {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+}
+
+/* Inline Code Container Adjustments */
+.blog-post-content pre {
+    margin-left: 1rem;             /* Indent code blocks from content edge */
+    margin-right: 1rem;            /* Balance the indentation */
+    width: calc(100% - 2rem);      /* Maintain proper width accounting for indentation */
+}
+
+/* Dark Mode Syntax Highlighting */
+body.dark-mode .token.comment,
+body.dark-mode .hljs-comment {
+    color: #6a9955;                          /* Dark mode comment color */
+}
+
+body.dark-mode .token.keyword,
+body.dark-mode .hljs-keyword {
+    color: #569cd6;                          /* Dark mode keyword color */
+}
+
+body.dark-mode .token.string,
+body.dark-mode .hljs-string {
+    color: #ce9178;                          /* Dark mode string color */
+}
+
+body.dark-mode .token.function,
+body.dark-mode .hljs-title {
+    color: #dcdcaa;                          /* Dark mode function color */
+}
+
+body.dark-mode .token.variable,
+body.dark-mode .hljs-variable {
+    color: #9cdcfe;                          /* Dark mode variable color */
+}
+
+body.dark-mode .token.number,
+body.dark-mode .hljs-number {
+    color: #b5cea8;                          /* Dark mode number color */
+}
+
+body.dark-mode .token.operator,
+body.dark-mode .hljs-operator {
+    color: #d4d4d4;                          /* Dark mode operator color */
+}
+
+/* Updated List Alignment */
+.blog-post-content ul,
+.blog-post-content ol {
+    padding-left: 1.25rem;    /* Reduced padding for better alignment with H2 */
+    margin-left: 0;           /* Remove margin */
+    list-style-position: outside;
+}
+
+/* Nested Lists Adjustment */
+.blog-post-content ul ul,
+.blog-post-content ol ol,
+.blog-post-content ul ol,
+.blog-post-content ol ul {
+    padding-left: 1.25rem;    /* Consistent indentation for nested lists */
+    margin-left: 0;
+}
+
+/* Optional: Adjust list item spacing */
+.blog-post-content li {
+    margin-bottom: 0.5rem;    /* Add some vertical spacing between list items */
+}
+
+/* Remove any inherited indentation */
+.blog-post-content h2 + ul,
+.blog-post-content h2 + ol {
+    margin-top: 0.5rem;       /* Space between heading and list */
 }

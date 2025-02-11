@@ -66,7 +66,7 @@ Yes this is a great idea - I will install a packahe manager - this is a test del
 
 4. Confirm zsh is the running shell with :-
 ```bash
-oh-my-posh get shell
+    oh-my-posh get shell
 ```
 5.  Add the following to your .zprofile
 ```bash
@@ -81,7 +81,7 @@ NOTE:  where your .zprofile is note ….. this /Users/andyjenkins/.zprofile
 5.  Install Nerd Fonts as per command 
 
 ```bash
-brew install --cask font-fira-code-nerd-font
+    brew install --cask font-fira-code-nerd-font
 ```
 
 6.  Make sure that iTerm 2 is now using the installed Fonts to ensure everything displays correctly
@@ -91,7 +91,7 @@ brew install --cask font-fira-code-nerd-font
 7. Ensure Visual Studio Code is updated to use Nerd fonts, otherwise the Terminal will not display correctly.  Head to setting and search for ""terminal.integrated.fontFamily" - and set to "FiraCode Nerd Font Mono'"
 
 ```bash
-"terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono'"
+    "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono'"
 ```
 
 ## Install Python

@@ -1,33 +1,55 @@
 /* Updated Footer CSS using global color variables */
 
-/* Sticky Footer */
+/* Footer Styling */
 .site-footer {
     background-color: var(--bg-color);
     color: var(--text-color);
-    text-align: center;
-    padding: 2rem 0;  /* Adjusted padding for more space above the footer */
+    padding: 1rem 1rem;     /* Reduced from 2rem to 1rem */
     margin-top: auto;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%;
+    display: flex;           /* Changed to flex */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
 }
 
-
-/* Footer Text */
+/* Footer Content Container */
 .site-footer p {
-    margin: 0;
-    font-size: 0.9rem;
+    margin: 0;              /* Remove auto margins */
+    font-size: 0.85rem;    /* Reduced from 0.9rem to 0.85rem */
+    max-width: 600px;
+    line-height: 1.4;      /* Reduced from 1.6 to 1.4 */
+    text-align: center;     /* Keep text centered */
+    width: 100%;           /* Add width to ensure full container width */
 }
 
-/* Optional: Style Font Awesome icons within the footer */
+/* Footer Icons - adjusted for better alignment */
 .site-footer i {
+    display: inline-block;
     vertical-align: middle;
     margin: 0 0.25rem;
+    font-size: 0.85rem;    /* Reduced from 0.9rem to match text */
 }
 
-/* Dark Mode Footer */
+/* Footer Links */
+.site-footer a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    transition: text-decoration-thickness 0.2s ease;
+}
+
+.site-footer a:hover {
+    text-decoration-thickness: 2px;
+}
+
+/* Dark Mode Adjustments */
 body.dark-mode .site-footer {
     background-color: var(--header-bg, #1e1e1e);
     color: var(--text-color, #eeeeee);
-    box-shadow: 0 -2px 4px rgba(255, 255, 255, 0.1); /* Light shadow for dark mode */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 -2px 4px rgba(255, 255, 255, 0.05);
 }

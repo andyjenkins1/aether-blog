@@ -17,8 +17,17 @@
 
             <!-- Metadata: Reading Time & Tags -->
             <div class="card-meta">
-              <span class="reading-time">{{ .ReadingTime }} min read</span>
-
+              
+              {{ $wordsPerMinute := default 200 .Site.Params.wordsPerMinute }}
+              {{ $readTime := div (countwords .Content) $wordsPerMinute }}
+              {{ $readTime := math.Ceil $readTime }}
+              <span class="reading-time">
+                {{ if eq $readTime 1 }}
+                {{ $readTime }} minute read
+                {{ else }}
+                {{ $readTime }} minutes read
+                {{ end }}
+            </span>
               {{ with .Params.tags }}
               <div class="blog-tags">
                 {{ range . }}

@@ -1,7 +1,9 @@
 baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
-title = 'Aether Blog'
+title = 'Neural Notes'
 
+[params]
+  wordsPerMinute = 200  # Default reading speed
 
 # Define Taxonomies
 [taxonomies]
