@@ -10,20 +10,30 @@ tags:
   - Howto
 ---
 
-## Introduction H2
+## Introduction
 
 In this article I have captued my development setup on my personal Mac as of Feb 2025, I know everyone has their own unique setup but this is the one I have settled on which so far provides everything I need.  Will update this article as I tweak and install different languages and tools.
 
-## Setup IDE - H2
+## Setup IDE
 
-1.  Visual Studio Code Install - On this one, no need to do anything special just download from the visual studio code website - code.visualstudio.com
+Visual Studio Code Install - On this one, no need to do anything special just download from the visual studio code website - <a href="https://code.visualstudio.com" target="_blank"> Visual Studio Code</a>
+
+// Tip shortcode to highlight best practices
+{{< admonition type="tip" title="Pro Tip" >}}
+Always commit your changes often to avoid losing work!
+{{< /admonition >}}
+
+// Warning shortcode to highlight dangerous operations
+{{< admonition type="danger" title="Warning!" >}}
+This action is irreversible, proceed with caution!
+{{< /admonition >}}
 
 ## Install Package Manager - H2
 
 Yes this is a great idea - I will install a packahe manager - this is a test delete.  
 
 
-1.  Install Homebrew - head to https://brew.sh and follow the installation commands.  Once installed, don't forget the following basic configuration
+1.  Install Homebrew - head to <a href="https://brew.sh" target="_blank">brew.sh</a> and follow the installation commands.  Once installed, don't forget the following basic configuration
 
     a) Add Brew to your path to make it available system wide (see intructions from installation)
     
