@@ -536,3 +536,39 @@ body.dark-mode .hljs-operator {
 .blog-post-content h2 + ol {
     margin-top: 0.5rem;       /* Space between heading and list */
 }
+
+/* For Admonition ShortCode Styling */
+.admonition {
+    display: flex;
+    align-items: flex-start;
+    border-left: 5px solid;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .admonition-icon {
+    margin-right: 0.75rem;
+    font-size: 1.25rem;
+  }
+  
+  .admonition-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .admonition.note { border-color: #5bc0de; background-color: #e7f5ff; }
+  .admonition.tip { border-color: #5cb85c; background-color: #e9fbe9; }
+  .admonition.warning { border-color: #f0ad4e; background-color: #fff3cd; }
+  .admonition.info { border-color: #5bc0de; background-color: #d9edf7; }
+  .admonition.danger { border-color: #d9534f; background-color: #f8d7da; }
+  .admonition.success { border-color: #28a745; background-color: #d4edda; }
+  .admonition.bug { border-color: #d63384; background-color: #fce4ec; }
+  .admonition.example { border-color: #6f42c1; background-color: #f3e8ff; }
+  .admonition.question { border-color: #17a2b8; background-color: #d1ecf1; }
+  .admonition.quote { border-color: #6c757d; background-color: #f8f9fa; }
+  .admonition.abstract { border-color: #6610f2; background-color: #f5e6ff; }
+  .admonition.attention { border-color: #fd7e14; background-color: #ffe5b4; }
+  
+  

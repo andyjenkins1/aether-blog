@@ -1,0 +1,36 @@
+<!-- layouts/shortcodes/admonition.html -->
+<div class="admonition {{ .Get `type` | default `note` }}">
+    <div class="admonition-icon">
+      {{- if eq (.Get "type" | default "note") "note" -}}
+        <i class="fas fa-sticky-note"></i>
+      {{- else if eq (.Get "type" | default "note") "tip" -}}
+        <i class="fas fa-lightbulb"></i>
+      {{- else if eq (.Get "type" | default "note") "warning" -}}
+        <i class="fas fa-exclamation-triangle"></i>
+      {{- else if eq (.Get "type" | default "note") "info" -}}
+        <i class="fas fa-info-circle"></i>
+      {{- else if eq (.Get "type" | default "note") "danger" -}}
+        <i class="fas fa-skull-crossbones"></i>
+      {{- else if eq (.Get "type" | default "note") "success" -}}
+        <i class="fas fa-check-circle"></i>
+      {{- else if eq (.Get "type" | default "note") "bug" -}}
+        <i class="fas fa-bug"></i>
+      {{- else if eq (.Get "type" | default "note") "example" -}}
+        <i class="fas fa-flask"></i>
+      {{- else if eq (.Get "type" | default "note") "question" -}}
+        <i class="fas fa-question-circle"></i>
+      {{- else if eq (.Get "type" | default "note") "quote" -}}
+        <i class="fas fa-quote-left"></i>
+      {{- else if eq (.Get "type" | default "note") "abstract" -}}
+        <i class="fas fa-file-alt"></i>
+      {{- else if eq (.Get "type" | default "note") "attention" -}}
+        <i class="fas fa-exclamation-circle"></i>
+      {{- end }}
+    </div>
+    <div class="admonition-content">
+      {{ if .Get `title` }}
+        <div class="admonition-title">{{ .Get `title` }}</div>
+      {{ end }}
+      {{ .Inner | markdownify }}
+    </div>
+  </div>
