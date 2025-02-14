@@ -5,12 +5,13 @@ title = 'Neural Notes'
 [params]
   wordsPerMinute = 200  # Default reading speed
 
-# Define Taxonomies
+# Define taxonomies for content organization
 [taxonomies]
-  tag = "tags"
-  category = "categories"
+  tag = "tags"       # Enable tag taxonomies
+  category = "categories"  # Enable category taxonomies
 
-  [markup]
+# Configure markdown processing
+[markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true
+      unsafe = true  # Allow raw HTML in markdown content
